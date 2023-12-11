@@ -7,6 +7,8 @@ TODO:
 
 make pretty,
 
-mouse button support
+~~mouse button support~~
 
-maybe add in some kind of visual aid?
+~~maybe add in some kind of visual aid?~~
+
+*only if you use newindex.html*
