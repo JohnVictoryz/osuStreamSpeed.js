@@ -55,9 +55,9 @@ function beginTest() {
     timediffs.length = 0;
     beginTime = -1;
     key1 = $('#key1').val();
-	key1upper = key1.toUpperCase();
+    key1upper = key1.toUpperCase();
     key2 = $('#key2').val();
-	key2upper = key2.toUpperCase();
+    key2upper = key2.toUpperCase();
     mouse = $("input[name='cmouse']").prop("checked");
     $("div#status").html("Test ready, press key 1 or key 2 to begin.");
     $("div#Result").html("\
@@ -68,9 +68,9 @@ function beginTest() {
     localStorage.setItem('clickLimit', clickLimit);
     localStorage.setItem('timeLimit', timeLimit);
     localStorage.setItem('key1', key1);
-	localStorage.setItem('key1upper', key1upper);
+    localStorage.setItem('key1upper', key1upper);
     localStorage.setItem('key2', key2);
-	localStorage.setItem('key2upper', key2upper);
+    localStorage.setItem('key2upper', key2upper);
     localStorage.setItem('mouse', mouse);
     std = 0;
     $("button#submit").hide();
@@ -272,18 +272,18 @@ $(document).ready(function() {
         $("input#key1").val("z");
     else
         $("input#key1").val(localStorage.getItem('key1'));
-	if(!localStorage.getItem('key1upper'))
-		$("input#key1upper").val("Z");
-	else
-		$("input#key1upper").val(localStorage.getItem('key1upper'));
+    if(!localStorage.getItem('key1upper'))
+	$("input#key1upper").val("Z");
+    else
+	$("input#key1upper").val(localStorage.getItem('key1upper'));
     if(!localStorage.getItem('key2'))
         $("input#key2").val("x");
     else
         $("input#key2").val(localStorage.getItem('key2'));
-	if(!localStorage.getItem('key2upper'))
-		$("input#key2upper").val("X");
-	else
-		$("input#key2upper").val(localStorage.getItem('key2upper'));
+    if(!localStorage.getItem('key2upper'))
+	$("input#key2upper").val("X");
+    else
+	$("input#key2upper").val(localStorage.getItem('key2upper'));
     if(!localStorage.getItem('timeLimit'))
         $("input#clickTime").val("10");
     else
